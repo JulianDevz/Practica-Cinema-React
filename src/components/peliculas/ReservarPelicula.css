@@ -1,0 +1,10 @@
+.form-control-g {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    color: #0e0123;
+  }
+  
+  .formx {
+    padding-left: 30px!important;
+  }

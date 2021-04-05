@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+
+.containerPadre{
+background-image: url('https://i.ibb.co/6ZxPYT6/584238-palomitas-de-maiz-y-una-sala-de-cine-fondo-de-pantalla-911x606-h.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+.card{
+height: 490px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5);
+}
+
+.card-1{
+height: 490px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: #fff;
+align-items: center;
+}
+
+.card-1 img{
+width: 80%;
+height: 70%;
+}
+
+.card-header img{
+width: 60px;
+height: 55px;
+}
+
+.card-body h2{
+color: white;
+}
+
+.card-body p{
+color: rgb(136, 120, 120);
+}
+
+.google .btn{
+width: 304px;
+height: 60px;
+justify-content: center;
+}
+
+.facebook .btn{
+padding-right: 50px;
+}
