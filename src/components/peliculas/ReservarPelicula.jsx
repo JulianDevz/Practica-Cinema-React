@@ -1,4 +1,4 @@
-import React,{useState, useContext, useEffect} from 'react';
+import React, { useState, useContext } from 'react';
 import peliculaContext from '../../context/pelicula/peliculaContext';
 import Swal from 'sweetalert2';
 import './ReservarPelicula.css'

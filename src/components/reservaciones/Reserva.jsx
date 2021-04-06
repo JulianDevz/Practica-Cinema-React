@@ -1,6 +1,7 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import peliculaContext from '../../context/pelicula/peliculaContext'
 import Swal from 'sweetalert2'
+import './Reserva.module.css';
 
 export default function Reserva({reserva}) {
 

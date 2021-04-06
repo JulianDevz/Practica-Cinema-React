@@ -1,17 +1,17 @@
-import React, { Fragment, useContext } from 'react'
+import React, { Fragment, useContext, useEffect, useState } from 'react'
 import Listado from './Listado'
 import ReservarPelicula from '../peliculas/ReservarPelicula'
 import ListadoReservas from '../reservaciones/ListadoReservas'
 import peliculaContext from '../../context/pelicula/peliculaContext'
 import {Link, useHistory} from 'react-router-dom'
+import Paginacion from  './Paginacion'
 import './Peliculas.css'
 
 
 export default function Peliculas() {
 
      const data = useContext(peliculaContext)
-
-     const { setUser, user } = data
+     const { setUser, user, totalPeliculas, paginaActual } = data
 
      const history = useHistory();
 
@@ -23,12 +23,9 @@ export default function Peliculas() {
           history.push("/")
      }
 
-
-
-
      return (
           <Fragment>
-               {/* header */}
+               {/* -------- HEADER -------- */}
                <div className="container-fluid">
                     <div className="row align-items-center">
                          <div className="col-md-12 superior">
@@ -46,7 +43,7 @@ export default function Peliculas() {
                          </div>
                     </div>
                </div>
-               {/* compoenentes */}
+               {/* -------- COMPONENTES -------- */}
                <div className="container text-white">
                     <div className="row">
                          <div className="col-md-12">
@@ -56,6 +53,9 @@ export default function Peliculas() {
                                    </div>
                                    <div className="col-md-12">
                                         <Listado />
+                                   </div>
+                                   <div className="col-md-12 justify-content-center align-item-center d-flex pt-5 pb-3">
+                                        <Paginacion/>
                                    </div>
                               </div>
                          </div>

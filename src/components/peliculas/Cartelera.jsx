@@ -1,14 +1,6 @@
-import React,{useContext, useState} from 'react'
+import React, { useContext } from 'react'
 import peliculaContext from '../../context/pelicula/peliculaContext'
 import styles from './Cartelera.module.css';
-// import styled from '@emotion/styled'
-
-
-// const Imagen = styled.img`
-//      width: 50%;
-//      margin: 10px;
-//      border: black solid 5px;
-// `
 
 
 export default function PeliculaReservada({peliculas}) {

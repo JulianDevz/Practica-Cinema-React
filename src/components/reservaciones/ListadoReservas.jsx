@@ -18,7 +18,7 @@ export default function ListadoReserva() {
      
 
      return (
-          <div>
+          <>
                <ul>
                     {reservas.map (reserva => (
                          <Reserva
@@ -30,6 +30,6 @@ export default function ListadoReserva() {
                     ))}
                </ul>
                
-          </div>
+          </>
      )
 }
